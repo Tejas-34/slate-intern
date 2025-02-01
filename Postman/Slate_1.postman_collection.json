@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "5db0234e-aeb2-4358-bc64-b073cb53c1d3",
+		"name": "Slate_1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35359983"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/student/achievements/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4Mzg4ODc4LCJpYXQiOjE3MzgzODg1NzgsImp0aSI6ImEwY2JjMmNlY2M3MzRiNjI5MDQxMTI4ZjM3NzY4ZDg1IiwidXNlcl9pZCI6N30.EV9wuk2zxeJohwMSS_wrjvBrJVMC8Vd0fM1EUa2HGoI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4MTU4MTEwLCJpYXQiOjE3MzgxNTc4MTAsImp0aSI6IjI4ODcwYTE3NTI4MDRiMDBiNThlZmZmMmY3NTRmMzY0IiwidXNlcl9pZCI6MX0.4wfc83bAWJTfZDRgnCvu4nC8NCnK5sDxNnlhkWCVlM4",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"testing@gmail.com\",\n  \"password\": \"testing\",\n  \"role\": \"school\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/achievements/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"achievements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/auth/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"school@example.com\",\n    \"password\": \"SchoolPass123\",\n    \"role\": \"school\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"parent2@example.com\",\n    \"password\": \"ParentPass123\",\n    \"role\": \"parent\",\n    \"linked_student_id\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/student/achievements/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4MzkxMTQ1LCJpYXQiOjE3MzgzOTA4NDUsImp0aSI6IjI5YjFiMTEyMzYzNTRjMjA4ZjMwMDM0M2I5M2EwMTAwIiwidXNlcl9pZCI6OH0.BCRR13-lGFAyCKh2wSEyIM7cmpZnsCmGIp7NpH6GaJg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"student_id\": 9,\n        \"name\": \"John Doe\",\n        \"school_name\": \"ABC High School\",\n        \"achievements\": \"Won Science Olympiad\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/achievements/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"achievements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/student/achievements/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4MzkxNDAzLCJpYXQiOjE3MzgzOTExMDMsImp0aSI6IjUyNzhjNWZjMjU5YTQ2MmNiYjk1NDk5NjU5MTljY2VhIiwidXNlcl9pZCI6OH0.QwOGpsIyjLq8hnz9WgnoqXruZunFb0WK_Cd-247kJMY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"student_id\": 11,\n        \"name\": \"Jane Smith\",\n        \"school_name\": \"XYZ Academy\",\n        \"achievements\": \"Topper in Mathematics\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/achievements/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"achievements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/student/achievements/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4MzkxNDAzLCJpYXQiOjE3MzgzOTExMDMsImp0aSI6IjUyNzhjNWZjMjU5YTQ2MmNiYjk1NDk5NjU5MTljY2VhIiwidXNlcl9pZCI6OH0.QwOGpsIyjLq8hnz9WgnoqXruZunFb0WK_Cd-247kJMY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"student_id\": 10,\n        \"name\": \"Alice Johnson\",\n        \"school_name\": \"LMN Public School\",\n        \"achievements\": \"State-level Chess Champion\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/achievements/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"achievements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/student/achievements/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4MzkxNzMyLCJpYXQiOjE3MzgzOTE0MzIsImp0aSI6IjhmZTY1ZTlmNjc3MjQwODI5MjA2MjY5NmQzNzViM2ZiIiwidXNlcl9pZCI6OH0.E6FA1mlPP2WnmbubedLe7FBZPExLAMoIV05QuKzH-P4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/achievements/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"achievements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/auth/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"parent2@example.com\",\n    \"password\": \"ParentPass123\",\n    \"role\": \"parent\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/student/achievements/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM4MzkxODAyLCJpYXQiOjE3MzgzOTE1MDIsImp0aSI6IjBkMzcxY2Q2OWY0MzRhYmJhYjliOGQyYmQ4NjlmNDE0IiwidXNlcl9pZCI6MTN9.BH5yGHTISMocT8I8V3gNrTyBhPMzizvmDeo6HH_e5NY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"parent2@example.com\",\n    \"password\": \"ParentPass123\",\n    \"role\": \"parent\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/student/achievements/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"achievements",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/auth/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"email\": \"student2@example.com\",\n        \"password\": \"StudentPass123\",\n        \"role\": \"student\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
