@@ -117,7 +117,7 @@ Users can log in by providing their credentials (email and password) to receive 
 With a valid token and proper authentication:
 
 - **Parents** can view the achievements of their related student(s).
-- **Students** cannot view their own achievement data.
+- **Students** can view their own achievement data.
 - **Schools** can add achievements and view the achievements of all their students.
 
 ---
