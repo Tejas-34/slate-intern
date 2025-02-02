@@ -93,15 +93,6 @@ python manage.py runserver
 
 Visit **[http://127.0.0.1:8000/](http://127.0.0.1:8000/)** in your browser.
 
----
-
-## **8. Access Django Admin Panel**
-
-Go to **[http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)**\
-Login with the superuser credentials created earlier.
-
-\--------------------------------------------------------------------------------
-
 
 ---
 
